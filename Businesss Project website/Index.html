@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corporate Dashboard</title>
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Atas<span>Pro</span></div>
+
+   <nav class="nav-links" id="navLinks">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Powering Smart Business Decisions</h1>
+      <p>
+        A modern corporate dashboard designed to visualize performance,
+        growth, and business insights.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn primary">Get Started</button>
+        <button href="pricing" class="btn secondary">View Pricing</button>
+      </div>
+    </div>
+  </section> 
+
+  <section id="about" class="about-hero">
+  <div class="about-hero-overlay"></div>
+  <div class="about-hero-content">
+    <h1>About Us</h1>
+    <p>We are committed to delivering smart business solutions with clarity and efficiency.</p>
+  </div>
+</section>
+
+<section class="about-content">
+  <div class="about-text">
+    <h2>Our Mission</h2>
+    <p>To empower businesses with professional dashboards and insights for better decision-making.</p>
+    
+    <h2>Our Vision</h2>
+    <p>Be the leading provider of intuitive and actionable business analytics solutions worldwide.</p>
+  </div>
+  <div class="about-image">
+    <img src="business2.avif" alt="Team or Office Image" />
+  </div>
+</section>
+
+<section class="about-stats">
+  <div class="stat-card">
+   <h3 class="counter" data-target="120">0</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat-card">
+   <h3 class="counter" data-target="50">0</h3>
+    <p>Active Clients</p>
+  </div>
+  <div class="stat-card">
+     <h3 class="counter" data-target="30">0</h3>
+    <p>Employees</p>
+  </div>
+</section> 
+
+<section id="services" class="services-section">
+  <div class="section-header">
+    <h2>Our Services</h2>
+    <p>Professional solutions designed to help businesses grow and scale.</p>
+  </div>
+
+  <div class="services-cards">
+
+    <div class="service-card">
+      <i class="ri-dashboard-3-line service-icon"></i>
+      <h3>Dashboard Development</h3>
+      <p>
+        We design intuitive dashboards that help businesses track performance
+        and make data-driven decisions.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="ri-code-s-slash-line service-icon"></i>
+      <h3>Web Development</h3>
+      <p>
+        Responsive, secure, and modern websites tailored for corporate and
+        business needs.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="ri-bar-chart-grouped-line service-icon"></i>
+      <h3>Business Analytics</h3>
+      <p>
+        Transform raw data into meaningful insights using KPIs and visual
+        reports.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="ri-customer-service-2-line service-icon"></i>
+      <h3>Technical Support</h3>
+      <p>
+        Reliable support to ensure smooth operations and system performance.
+      </p>
+    </div>
+
+  </div>
+</section> 
+
+
+<section id="testimonials" class="testimonials-section">
+  <div class="section-header">
+    <h2>What Our Clients Say</h2>
+    <p>Trusted by businesses for delivering reliable and impactful solutions.</p>
+  </div>
+
+  <div class="testimonial-slider">
+    <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+
+    <div class="testimonial-wrapper" id="testimonialWrapper">
+
+      <div class="testimonial-card active">
+        <p class="testimonial-text">
+          “The dashboard transformed how we track our business performance.
+          Clean design and very easy to use.”
+        </p>
+        <h4>James Mwangi</h4>
+        <span>Operations Manager</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Professional, responsive, and modern. Exactly what our company
+          needed to improve decision-making.”
+        </p>
+        <h4>Sarah Wanjiru</h4>
+        <span>Business Analyst</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Excellent attention to detail and great user experience.
+          Highly recommended for corporate solutions.”
+        </p>
+        <h4>David Otieno</h4>
+        <span>IT Manager</span>
+      </div>
+
+    </div>
+
+    <button class="slider-btn next" id="nextBtn">&#10095;</button>
+  </div>
+</section> 
+
+<section id="pricing" class="pricing-section">
+  <div class="section-header">
+    <h2>Pricing Plans</h2>
+    <p>Flexible plans designed to scale with your business.</p>
+  </div>
+
+  <!-- TOGGLE -->
+  <div class="pricing-toggle">
+    <span>Monthly</span>
+    <label class="switch">
+      <input type="checkbox" id="priceToggle" />
+      <span class="slider"></span>
+    </label>
+    <span>Yearly <small>(Save 20%)</small></span>
+  </div>
+
+  <!-- CARDS -->
+  <div class="pricing-cards">
+
+    <div class="pricing-card">
+      <h3>Basic</h3>
+      <p class="price">
+        <span class="currency">$</span>
+        <span class="amount" data-month="19" data-year="180">19</span>
+        <span class="duration">/mo</span>
+      </p>
+
+      <ul>
+        <li>✔ Dashboard Access</li>
+        <li>✔ Basic Analytics</li>
+        <li>✔ Email Support</li>
+        <li>✖ Advanced Reports</li>
+      </ul>
+
+      <button class="btn primary">Get Started</button>
+    </div>
+
+    <div class="pricing-card featured">
+      <div class="badge">Most Popular</div>
+      <h3>Pro</h3>
+      <p class="price">
+        <span class="currency">$</span>
+        <span class="amount" data-month="39" data-year="370">39</span>
+        <span class="duration">/mo</span>
+      </p>
+
+      <ul>
+        <li>✔ Full Dashboard</li>
+        <li>✔ Advanced Analytics</li>
+        <li>✔ Priority Support</li>
+        <li>✔ Custom Reports</li>
+      </ul>
+
+      <button class="btn primary">Start Free Trial</button>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Enterprise</h3>
+      <p class="price">
+        <span class="currency">$</span>
+        <span class="amount" data-month="79" data-year="750">79</span>
+        <span class="duration">/mo</span>
+      </p>
+
+      <ul>
+        <li>✔ Unlimited Access</li>
+        <li>✔ Custom Dashboards</li>
+        <li>✔ Dedicated Support</li>
+        <li>✔ SLA & Security</li>
+      </ul>
+
+      <button class="btn secondary">Contact Sales</button>
+    </div>
+
+  </div>
+</section> 
+
+<section id="contact" class="contact-section">
+  <div class="section-header">
+    <h2>Get in Touch</h2>
+    <p>Have a project in mind? Let’s discuss how we can help.</p>
+  </div>
+
+  <div class="contact-container">
+    <!-- INFO -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>Fill out the form and we’ll get back to you shortly.</p>
+
+      <ul>
+        <li><i class="ri-map-pin-line"></i> Nairobi, Kenya</li>
+        <li><i class="ri-mail-line"></i> info@yourcompany.com</li>
+        <li><i class="ri-phone-line"></i> +254 700 000 000</li>
+      </ul>
+    </div>
+
+    <!-- FORM -->
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Your name" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Your email" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="message" rows="5" placeholder="Your message"></textarea>
+        <small class="error"></small>
+      </div>
+
+      <button type="submit" class="btn primary">Send Message</button>
+
+      <p class="success-message" id="successMessage">
+        ✅ Message sent successfully! (Demo only)
+      </p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h3>Atas Proserve</h3>
+      <p>
+        Delivering professional digital solutions that help businesses
+        grow, scale, and succeed.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="ri-mail-line"></i> info@atasproserve.co.ke</li>
+        <li><i class="ri-phone-line"></i> +254 794 535 918</li>
+        <li><i class="ri-map-pin-line"></i> Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2025 Atas Proserve. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+     
